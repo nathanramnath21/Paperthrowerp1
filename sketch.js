@@ -6,8 +6,7 @@ const Body = Matter.Body;
 
 var ground, paperObject;
 
-function preload()
-{
+function preload(){
 	
 }
 
@@ -21,7 +20,7 @@ function setup() {
 	paperObject = new Paper(100,690,20)
 
 	ground = new Ground(400,height,800,20)
-
+	var render = Render.create({ element: document.body, engine: engine, options: { width: 1200, height: 700, wireframes: false } });
 	Engine.run(engine);
   
 }
